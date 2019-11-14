@@ -6,7 +6,7 @@ digraph {
     Remy->Mikey [style="invis"];
 
     subgraph Allard {
-        edge [color=red]
+        edge [color=red];
         Allard [color=red];
         Allard->Tom;
         Allard->Sas;
@@ -40,7 +40,7 @@ digraph {
     }
 
     subgraph Matthijs {
-        edge [color=purple]
+        edge [color=purple];
         Matthijs [color=purple];
         Matthijs->Sas;
         Matthijs->Kees;
