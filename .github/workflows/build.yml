@@ -1,0 +1,24 @@
+name: Build PNG's from .dot files
+
+on:
+  push:
+    paths:
+      - '**.dot'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run build
+      run: ./scripts/build.sh
+    - name: Commit file changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add images
+        git commit -m "ci: build pngs from dot files"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
