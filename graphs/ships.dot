@@ -1,0 +1,50 @@
+digraph {
+    Saint;
+
+    Remy [label="Remy the Fwend"];
+    Mikey [label="Mikey the Watcher 👀"];
+    Remy->Mikey [style="invis"];
+
+    subgraph Allard {
+        edge [color=red]
+        Allard [color=red];
+        Allard->Tom;
+        Allard->Sas;
+        Allard->Sennen;
+    }
+
+    subgraph Tom {
+        edge [color=black]; // 🤷, does absolutely nothing
+        Tom;
+        Tom->Allard;
+        Tom->Saint;
+        Tom->Sennen;
+        Tom->Sas;
+    }
+
+    subgraph Sas {
+        edge [color=pink];
+        Sas [color=pink label="Sasssscha"];
+        Sas->Allard;
+        Sas->Tom;
+        Sas->Sennen;
+        Sas->Kees;
+        Sas->Matthijs;
+    }
+
+    subgraph Kees {
+        edge [color=lightgrey];
+        Kees [color=lightgrey];
+        Kees->Sas;
+        Kees->Matthijs;
+    }
+
+    subgraph Matthijs {
+        edge [color=purple]
+        Matthijs [color=purple];
+        Matthijs->Sas;
+        Matthijs->Kees;
+    }
+
+    Sennen [color=green];
+}

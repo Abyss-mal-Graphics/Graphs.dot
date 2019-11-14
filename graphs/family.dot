@@ -1,0 +1,46 @@
+digraph {
+    edge [fontsize=5];
+
+    subgraph Zoomers {
+        rank = same;
+        Kees;
+        Teus;
+        Sas;
+    }
+
+    subgraph Millenials {
+        rank = same;
+        Tom;
+        Allard;
+    }
+
+    subgraph Tom {
+        edge [color=black];
+        Tom;
+        Tom -> Sas [label="Vader...Zoon"];
+    }
+
+    subgraph Sas {
+        edge [color=pink];
+        Sas [color=pink label="Sasssscha"];
+        Sas -> Simon [label="Moeder...Zoon"];
+    }
+
+    subgraph Kees {
+        edge [color=lightgrey];
+        Kees [color=lightgrey];
+        Kees->Simon [label="Vader...Zoon"];
+    }
+
+    subgraph Teus {
+        edge [color=grey];
+        Teus [color=grey];
+        Teus->Kees [label="Broeders" dir="none"];
+    }
+
+    subgraph Allard {
+        edge [color=red];
+        Allard [color=red];
+        Allard->Iedereen [label="Vader...*"];
+    }
+}
