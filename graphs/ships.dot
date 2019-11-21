@@ -2,8 +2,6 @@ digraph {
     Saint;
 
     Remy [label="Remy the Fwend"];
-    Mikey [label="Mikey the Watcher 👀"];
-    Remy->Mikey [style="invis"];
 
     subgraph Allard {
         edge [color=red];
@@ -20,6 +18,7 @@ digraph {
         Tom->Saint;
         Tom->Sennen;
         Tom->Sas;
+        Tom->Mikey
     }
 
     subgraph Sas {
@@ -44,6 +43,11 @@ digraph {
         Matthijs [color=purple];
         Matthijs->Sas;
         Matthijs->Kees;
+    }
+    
+    subgraph Mikey {
+        Mikey [label="Mikey not the Watcher"];
+        Mikey->Tom
     }
 
     Sennen [color=green];
