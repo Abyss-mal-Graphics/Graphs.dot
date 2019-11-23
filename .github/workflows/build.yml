@@ -2,6 +2,8 @@ name: Build PNG's from .dot files
 
 on:
   push:
+    branches:
+      - master
     paths:
       - '**.dot'
 
