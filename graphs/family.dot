@@ -18,7 +18,7 @@ digraph {
         edge [color=black];
         Tom;
         Tom -> Sas [label="Vader...Zoon"];
-        Tom->Iedereen [label="Moeder...*"];
+        Tom->Iedereen & Ghost [label="Moeder...*"];
     }
 
     subgraph Sas {
@@ -42,6 +42,6 @@ digraph {
     subgraph Allard {
         edge [color=red];
         Allard [color=red];
-        Allard->Iedereen [label="Vader...*"];
+        Allard->Iedereen & Ghost [label="Vader...*"];
     }
 }
