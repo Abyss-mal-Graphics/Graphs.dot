@@ -7,6 +7,7 @@ digraph {
         Kees;
         Teus;
         Sas;
+        Matthijs;
     }
 
     subgraph Millenials {
@@ -44,5 +45,12 @@ digraph {
         edge [color=red];
         Allard [color=red];
         Allard->Iedereen [label="Vader...*"];
+    }
+    
+    subgraph Matthijs{
+        edge [color=yellow];
+        Matthijs [color=yellow];
+        Matthijs->Kees [label="Makker"];
+    
     }
 }
