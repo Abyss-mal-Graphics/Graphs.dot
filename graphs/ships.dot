@@ -49,6 +49,34 @@ digraph {
         Mikey [label="Mikey not the Watcher"];
         Mikey->Tom
     }
+    
+    subgraph Twan {
+    edge [color=purple];
+        Twan [color=purple];
+        Twan [label="Twan de mysterie-man"];
+        Twan->Sennen
+    }
+    
+    subgraph Sheep {
+        Sheep  [shape=polygon,sides=5];
+    edge [color=red];
+        Sheep [color=red];
+        Sheep [label="Schaep"];
+        Sheep->Allard;
+        Sheep->Sennen;
+    }
 
-    Sennen [color=green];
+    subgraph Sennen {
+    edge [color=green];
+        Sennen [color=green];
+        Sennen->Twan;
+        Sennen->Sheep;
+        Sennen->Allard;
+    }
+    
+    subgraph Nevil {
+    edge [color=Purple];
+        Nevil [color=purple];
+        Nevil->Allard;
+    }
 }
