@@ -48,6 +48,7 @@ digraph {
     subgraph Mikey {
         Mikey [label="Mikey not the Watcher"];
         Mikey->Tom
+        Mikey->Kees
     }
     
     subgraph Twan {
@@ -63,14 +64,12 @@ digraph {
         Sheep [color=red];
         Sheep [label="Schaep"];
         Sheep->Allard;
-        Sheep->Sennen;
     }
 
     subgraph Sennen {
     edge [color=green];
         Sennen [color=green];
         Sennen->Twan;
-        Sennen->Sheep;
         Sennen->Allard;
     }
     
