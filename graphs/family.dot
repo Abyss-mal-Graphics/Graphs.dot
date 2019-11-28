@@ -12,6 +12,7 @@ digraph {
 
     subgraph Millenials {
         rank = same;
+        Nytki;
         Tom;
         Allard;
     }
@@ -51,6 +52,13 @@ digraph {
         edge [color=yellow];
         Matthijs [color=yellow];
         Matthijs->Kees [label="Makker"];
+    
+    }
+    
+    subgraph Nytki{
+        edge [color=yellow];
+        Nytki [color=yellow];
+        Nytki->Sas [label="Moeder...Zoon"];
     
     }
 }
