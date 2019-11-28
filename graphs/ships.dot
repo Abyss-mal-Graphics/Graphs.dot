@@ -29,6 +29,7 @@ digraph {
         Sas->Sennen;
         Sas->Kees;
         Sas->Matthijs;
+        Sas->Nytki;
     }
 
     subgraph Kees {
@@ -77,5 +78,11 @@ digraph {
     edge [color=Purple];
         Nevil [color=purple];
         Nevil->Allard;
+    }
+    
+    subgraph Nytki {
+    edge [color=yellow];
+        Nytki [color=yellow];
+        Nytki->Sas;
     }
 }
