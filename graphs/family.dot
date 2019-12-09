@@ -51,7 +51,7 @@ digraph {
     subgraph Matthijs{
         edge [color=yellow];
         Matthijs [color=yellow];
-        Matthijs->Kees [label="Makker"];
+        Matthijs->Kees [label="Makker" dir="none"];
     
     }
     
@@ -59,6 +59,7 @@ digraph {
         edge [color=yellow];
         Nytki [color=yellow];
         Nytki->Sas [label="Moeder...Zoon"];
+        Nytki->Allard [label="Partners" dir="none"];
     
     }
 }
